@@ -18,9 +18,10 @@ router.get('/tweets', function(req, res, next) {
     {screen_name: 'tproworld', count : 30},
     function(error, tweets, response){
       if(!error){
-        res.status(200).json({tweets});
+        res.status(200).json({ tweets });
       } else{
-        res.status(500).json({ error: error });
+        res.status(500).json({ error });
+        console.log(error);
       }
     }
   );
