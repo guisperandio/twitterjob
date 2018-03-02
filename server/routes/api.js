@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const defaultTwitter = 'neymarjr';
+const defaultTwitter = 'tproworld';
 let twit = require('twitter');
 
 let secret = {
