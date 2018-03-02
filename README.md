@@ -1,6 +1,8 @@
 # TwitterJob
 
-Projeto desenvolvido com Angular 2+, NodeJS, Express & Twitter API
+Project developed with Angular 2+, NodeJS, Express & Twitter API
+
+Twitter default is 'tproworld', to change this go to folder 'server/routes/api.js' and change the variable defaultTwitter.
 
 ## Development server
 

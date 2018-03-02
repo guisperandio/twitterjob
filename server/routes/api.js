@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+const defaultTwitter = 'neymarjr';
 let twit = require('twitter');
 
 let secret = {
@@ -15,7 +16,7 @@ let twitter = new twit(secret);
 
 router.get('/tweets', function(req, res, next) {
   twitter.get('statuses/user_timeline',
-    {screen_name: 'tproworld', count : 30},
+    {screen_name: defaultTwitter, count : 30},
     function(error, tweets, response){
       if(!error){
         res.status(200).json({ tweets });
